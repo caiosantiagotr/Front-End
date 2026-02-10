@@ -7,13 +7,75 @@
 </head>
 <body>
        <h1>Formulario</h1>
+       <form action="Processa.html" method="get">
+         <h2>label</h2>
+         <!--
+           label -> legenda para item da interface
+         for -> para
+         -->
+         <label>
+            nome:
+ <input type="text" name="nome">
+         </label>
+         <label for="email">email</label>
+            Email:
+            <inpút type="text" name="email" id="email">
+               <br>
+               Genero<br>
 
+               <input type="radio" name="Genero" value="ferminio">Feminino
+               <label for="ferminio"></label>
+               <input type="radio" name="Genero" value="masculino">Maculino
+               <label for="masculino"></label>
+               <br><br>
+               <input type="radio" name="Cadastrar">
+               Estilo Musical <br>
+               <input type="checkbox" name="estilo" value="sertanjo">sertanjo
+               <input type="checkbox" name="estilo" value="pop">pop
+               <input type="checkbox" name="estilo" value="rock">rock
+              
+           Estado:
+           <select>
+            <option value="">selecione...</option>
+            <option value="rj">rj</option>
+            <option value="sp">sp</option>
+            <option value="mg">mg</option>
+           </select>
+
+           <br><br>
+           enviar arquivo:
+           <input type="file" name="arquivo">
+       </form>
+      <form>
+         <!--
+         
+         fieldset -> conjunto de campos
+         legend -> legenda para conjunto de campos
+         -->
+         <fieldset>
+            <legend>dados pessoais</legend>
+            <label for="nome2"> Nome</label>
+            <input type="text" name="nome" id="nome2">
+
+            <label for="email2">Email</label>
+            <input type="text" name="email" id="email2">
+         </fieldset>
+         <fieldset>
+            <legend>dados adicionas</legend>
+            <input type="radio" name="Genero" value="ferminio">Feminino
+               <label for="ferminio"></label>
+               
+               <input type="radio" name="Genero" value="masculino">Maculino
+               <label for="masculino"></label>
+         </fieldset>
+      </form>
          <!--
          form -> (formulario)
          input -> entrada de dados
          submit -> enviar
          button -> botão
          -->
+       <!--
          <form action="Processa.html">
             Login: <br>
             <input type="text" name="Login" placeholder="digite o login"> <br>
@@ -25,14 +87,15 @@
          Comentário: <br>
          <textarea name="Comentario" placeholder="digite a mensagem"></textarea>
          <br>
-         <!--
+         
          
           <input type="submit" value="Entrar">
-         -->
+         
           <button type="submit">
             <img src="../../html/Projeto/Site//Galeria/imagem/b1.jpg" width="10">Entrar
 
          </button>
          </form>
+       -->  
 </body>
 </html>
